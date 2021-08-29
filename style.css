@@ -42,6 +42,7 @@ body{
     pointer-events: none;
     z-index: 4;
     transition: .3s ease-in-out;
+    
 }
 .gallery-item:hover .text{
     opacity: 1;
