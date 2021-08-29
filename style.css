@@ -30,3 +30,34 @@ body{
 .gallery-item:hover .image img{
   transform: scale(1.5);
 }
+
+.gallery-item .text{
+    opacity:0;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    pointer-events: none;
+    z-index: 4;
+    transition: .3s ease-in-out;
+}
+.gallery-item:hover .text{
+    opacity: 1;
+    animation: drop-down .3s linear;
+    padding: 1em;
+    width: 100%;
+}
+@keyframes drop-down{
+    0%{
+        top: 10%;
+    }
+    50%{
+        top: 35%;
+    }
+    100%{
+        top: 50%;
+    }
+}
+
